@@ -1,9 +1,10 @@
 import sys
 from PyQt5.QtCore import QDir
-from PyQt5.QtWidgets import QApplication, QFileDialog, QMessageBox, QWidget
+from PyQt5.QtWidgets import QApplication, QFileDialog, QMessageBox, QInputDialog, QLineEdit
 from view import View
 from model import Model
 import pandas as pd
+import os
 
 class Controller():
     def __init__(self):
@@ -20,6 +21,11 @@ class Controller():
         self.WCErrorMsg.setIcon(QMessageBox.Warning)
         self.WCErrorMsg.setWindowTitle('Invalid Data')
         self.WCErrorMsg.setText('Wordcloud cannot be generated. Please check data and column selected.')
+        self.filesavedMsg = QMessageBox()
+        self.filesavedMsg.setIcon(QMessageBox.Information)
+        self.filesavedMsg.setWindowTitle('File Saved')
+        self.filesavedMsg.setText('Your file has been saved in your selected Folder/Directory.')
+
 
     def main(self):
         self.view.main()
@@ -71,6 +77,46 @@ class Controller():
             self.WCErrorMsg.exec_()
         else: 
             self.view.generateWC(self.model.wcObject, self.model.freq, self.model.freq_df, self.model.df[[self.model.currentCol]])
+
+    def saveFile(self):
+        def uniquify(path):
+            filename, extension = os.path.splitext(path)
+            counter = 1
+
+            while os.path.exists(path):
+                path = filename + " (" + str(counter) + ")" + extension
+                counter += 1
+
+            return path
+
+        print('Save button clicked')
+        # folderpath, _ =QFileDialog.getSaveFileName(None, "Saving Outputs", "Output", "All Files (*)", options=QFileDialog.ShowDirsOnly)
+        folderpath = QFileDialog.getExistingDirectory(None, 'Select Folder to Save Outputs', QDir.currentPath(), options=QFileDialog.ShowDirsOnly)
+        if folderpath == '':
+            return
+        print(folderpath)
+
+        filename, okPressed = QInputDialog.getText(None, "Please input your file name",
+                                                    "Please type the output's file name:", QLineEdit.Normal, "")
+        if okPressed and filename != '':
+            #Save WC
+            wcfilename = uniquify(folderpath + "/{} - Wordcloud.png".format(filename))
+            self.model.wcObject.to_file(wcfilename)
+
+            #Save FreqDist
+            wffilename = uniquify(folderpath + "/{} - Top 50 Word Freq.png".format(filename))
+            self.view.frame2.wfCanvas.axes.figure.savefig(wffilename)
+
+            #Save Excel (WF + Raw Data)
+            exfilename = uniquify(folderpath + "/{} - Word Frequencies.xlsx".format(filename))
+            with pd.ExcelWriter(exfilename) as writer:
+                self.model.freq_df.to_excel(writer, sheet_name="Word Frequencies", index=False)
+                self.model.df[[self.model.currentCol]].to_excel(writer, sheet_name="Raw Data", index=False)
+            
+            self.filesavedMsg.exec_()
+        else:
+            return
+        
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

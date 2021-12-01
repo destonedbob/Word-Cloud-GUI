@@ -87,6 +87,8 @@ class View(QWidget):
     def generateWC(self, wcObject, freq, freq_df, col_df):
         #Enable tabs
         [self.frame2.tabs.setTabEnabled(i, True) for i in range(1, self.frame2.tabs.count())]
+        #Enable save button
+        self.frame2.saveButton.setEnabled(True)
         #WC
         self.frame2.wcCanvas.axes = None
         self.frame2.displayframe.takeCentralWidget()
@@ -219,6 +221,14 @@ class secondFrame(QFrame):
         self.left.setLayout(self.leftlayout)
 
         #Right
+        self.right0 = QWidget()
+        self.rightlayout0 = QVBoxLayout()
+        self.saveButton = QPushButton()
+        self.saveButton.setText('Save Outputs')
+        self.saveButton.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
+        self.saveButton.clicked.connect(self.controller.saveFile)
+        self.saveButton.setEnabled(False)
+
         self.tabs = QTabWidget()
         self.right = QWidget()
         self.right.setObjectName('right')
@@ -231,6 +241,13 @@ class secondFrame(QFrame):
         self.tabs.addTab(self.right4, 'Column\'s Raw Data')
         self.rightlayout = QVBoxLayout()
         self.rightlayout.setAlignment(Qt.AlignHCenter)
+
+        self.rightlayout0.addWidget(self.tabs)
+        self.rightlayout0.addWidget(self.saveButton)
+        self.rightlayout0.setAlignment(self.saveButton, Qt.AlignHCenter)
+        self.right0.setLayout(self.rightlayout0)
+        
+
             #Frame (Tab 1 - WC)
         self.displayframe = QMainWindow()
         self.displayframe.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
@@ -302,7 +319,7 @@ class secondFrame(QFrame):
 
         self.grid.addWidget(self.top, 0, 0, 1, 4)
         self.grid.addWidget(self.left, 1, 0, 7, 1)
-        self.grid.addWidget(self.tabs, 1, 1, 7, 3)
+        self.grid.addWidget(self.right0, 1, 1, 7, 3)
                         
         
 
