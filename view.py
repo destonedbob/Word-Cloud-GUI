@@ -1,13 +1,9 @@
-import sys
-from PyQt5.QtWidgets import (QApplication, QComboBox, QGridLayout, QGroupBox, QHeaderView, QLabel, QListWidget, QPushButton, QTableView, QTableWidget, QWidget, QFileDialog, QFrame, 
+from PyQt5.QtWidgets import (QComboBox, QGridLayout, QGroupBox, QHeaderView, QLabel, QListWidget, QPushButton, QTableWidget, QWidget, QFrame, 
                             QSpacerItem, QVBoxLayout, QHBoxLayout, QSizePolicy, QTabWidget, QLineEdit, QMainWindow, QTableWidgetItem, QAbstractItemView)
-from PyQt5.QtCore import Qt, QAbstractTableModel, QRect, QRectF
-from PyQt5.QtGui import QFont, QWindow, QPalette, QColor, QFontMetrics
+from PyQt5.QtCore import Qt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg
 from matplotlib.figure import Figure
-import matplotlib.pyplot as plt
-import pandas
-import wordcloud
+import pandas as pd
 
 HEIGHT = 720
 WIDTH = 1280
@@ -113,7 +109,9 @@ class View(QWidget):
         self.frame2.datatable.setHorizontalHeaderLabels(freq_df.columns)
         for row in freq_df.iterrows():
             for col_idx, value in enumerate(row[1]):
-                if isinstance(value, int):
+                if pd.isnull(value):
+                    tableItem = QTableWidgetItem('')
+                elif isinstance(value, int) or isinstance(value, float):
                     tableItem = QTableWidgetItem(str(value))
                 else:
                     tableItem = QTableWidgetItem(value)
@@ -127,7 +125,9 @@ class View(QWidget):
         self.frame2.rawdatatable.setHorizontalHeaderLabels(['Raw Data'])
         for row in col_df.iterrows():
             for col_idx, value in enumerate(row[1]):
-                if isinstance(value, int):
+                if pd.isnull(value):
+                    tableItem = QTableWidgetItem('')
+                elif isinstance(value, int) or isinstance(value, float):
                     tableItem = QTableWidgetItem(str(value))
                 else:
                     tableItem = QTableWidgetItem(value)
@@ -307,7 +307,6 @@ class secondFrame(QFrame):
         self.toplayout = QHBoxLayout()
         self.csvNameLabel = QLabel()
         self.csvNameLabel.setObjectName('csvNameLabel')
-        # self.csvNameLabel.setFont(QFont('Arial', 16))
         self.csvNameLabel.setText('')
         self.changecsvButton = QPushButton()
         self.changecsvButton.setText('Change CSV')

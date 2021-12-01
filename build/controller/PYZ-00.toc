@@ -480,9 +480,6 @@
   ('subprocess',
    'c:\\users\\desto\\appdata\\local\\programs\\python\\python37\\lib\\subprocess.py',
    'PYMODULE'),
-  ('os',
-   'c:\\users\\desto\\appdata\\local\\programs\\python\\python37\\lib\\os.py',
-   'PYMODULE'),
   ('multiprocessing.spawn',
    'c:\\users\\desto\\appdata\\local\\programs\\python\\python37\\lib\\multiprocessing\\spawn.py',
    'PYMODULE'),
@@ -493,16 +490,24 @@
    'c:\\users\\desto\\desktop\\projects\\word cloud '
    'gui\\.venv\\lib\\site-packages\\pkg_resources\\__init__.py',
    'PYMODULE'),
-  ('pkg_resources._vendor',
+  ('pkg_resources._vendor.packaging',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
+   'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.markers',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
+   'PYMODULE'),
+  ('typing',
+   'c:\\users\\desto\\appdata\\local\\programs\\python\\python37\\lib\\typing.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.appdirs',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\appdirs.py',
    'PYMODULE'),
   ('pkg_resources._vendor.packaging._typing',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
    'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_typing.py',
-   'PYMODULE'),
-  ('typing',
-   'c:\\users\\desto\\appdata\\local\\programs\\python\\python37\\lib\\typing.py',
    'PYMODULE'),
   ('pkg_resources._vendor.pyparsing',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
@@ -528,6 +533,30 @@
    'PYMODULE'),
   ('ctypes.macholib.framework',
    'c:\\users\\desto\\appdata\\local\\programs\\python\\python37\\lib\\ctypes\\macholib\\framework.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.utils',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.requirements',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.specifiers',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.__about__',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._structures',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
    'PYMODULE'),
   ('pkg_resources._vendor.packaging.tags',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
@@ -581,45 +610,13 @@
   ('distutils.errors',
    'c:\\users\\desto\\appdata\\local\\programs\\python\\python37\\lib\\distutils\\errors.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging._structures',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.specifiers',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.version',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py',
-   'PYMODULE'),
   ('pkg_resources._vendor.packaging._compat',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
    'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_compat.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging.utils',
+  ('pkg_resources._vendor.packaging.version',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.appdirs',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\appdirs.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.markers',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.requirements',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.__about__',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
+   'gui\\.venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py',
    'PYMODULE'),
   ('sysconfig',
    'c:\\users\\desto\\appdata\\local\\programs\\python\\python37\\lib\\sysconfig.py',
@@ -634,26 +631,29 @@
   ('pathlib',
    'c:\\users\\desto\\appdata\\local\\programs\\python\\python37\\lib\\pathlib.py',
    'PYMODULE'),
-  ('_py_abc',
-   'c:\\users\\desto\\appdata\\local\\programs\\python\\python37\\lib\\_py_abc.py',
-   'PYMODULE'),
   ('tracemalloc',
    'c:\\users\\desto\\appdata\\local\\programs\\python\\python37\\lib\\tracemalloc.py',
    'PYMODULE'),
   ('stringprep',
    'c:\\users\\desto\\appdata\\local\\programs\\python\\python37\\lib\\stringprep.py',
    'PYMODULE'),
+  ('_py_abc',
+   'c:\\users\\desto\\appdata\\local\\programs\\python\\python37\\lib\\_py_abc.py',
+   'PYMODULE'),
+  ('os',
+   'c:\\users\\desto\\appdata\\local\\programs\\python\\python37\\lib\\os.py',
+   'PYMODULE'),
   ('pandas',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
    'gui\\.venv\\lib\\site-packages\\pandas\\__init__.py',
    'PYMODULE'),
-  ('pandas._libs.tslibs',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\pandas\\_libs\\tslibs\\__init__.py',
-   'PYMODULE'),
   ('pandas._libs.window',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
    'gui\\.venv\\lib\\site-packages\\pandas\\_libs\\window\\__init__.py',
+   'PYMODULE'),
+  ('pandas._libs.tslibs',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\pandas\\_libs\\tslibs\\__init__.py',
    'PYMODULE'),
   ('numpy',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
@@ -1345,13 +1345,105 @@
    'c:\\users\\desto\\desktop\\projects\\word cloud '
    'gui\\.venv\\lib\\site-packages\\PIL\\Image.py',
    'PYMODULE'),
-  ('PIL.DdsImagePlugin',
+  ('PIL.DcxImagePlugin',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\DdsImagePlugin.py',
+   'gui\\.venv\\lib\\site-packages\\PIL\\DcxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XVThumbImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\XVThumbImagePlugin.py',
    'PYMODULE'),
   ('PIL.ImageFile',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
    'gui\\.venv\\lib\\site-packages\\PIL\\ImageFile.py',
+   'PYMODULE'),
+  ('PIL.DdsImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\DdsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MicImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\MicImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.WmfImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\WmfImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PsdImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\PsdImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SpiderImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\SpiderImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImageTk',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\ImageTk.py',
+   'PYMODULE'),
+  ('PIL.Hdf5StubImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\Hdf5StubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BufrStubImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\BufrStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PcdImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\PcdImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpoImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\MpoImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.EpsImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\EpsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FtexImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\FtexImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FliImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\FliImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SunImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\SunImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\ImImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SgiImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\SgiImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XbmImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\XbmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.McIdasImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\McIdasImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpegImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\MpegImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.CurImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\CurImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PcxImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\PcxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MspImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\MspImagePlugin.py',
    'PYMODULE'),
   ('PIL.PdfImagePlugin',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
@@ -1365,125 +1457,45 @@
    'c:\\users\\desto\\desktop\\projects\\word cloud '
    'gui\\.venv\\lib\\site-packages\\PIL\\ImageSequence.py',
    'PYMODULE'),
-  ('PIL.XVThumbImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\XVThumbImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.ImtImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\ImtImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.SpiderImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\SpiderImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.ImageTk',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\ImageTk.py',
-   'PYMODULE'),
-  ('PIL.DcxImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\DcxImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.MpegImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\MpegImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.GbrImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\GbrImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.SgiImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\SgiImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.FliImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\FliImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.PcdImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\PcdImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.CurImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\CurImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.Hdf5StubImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\Hdf5StubImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.MspImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\MspImagePlugin.py',
-   'PYMODULE'),
   ('PIL.XpmImagePlugin',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
    'gui\\.venv\\lib\\site-packages\\PIL\\XpmImagePlugin.py',
    'PYMODULE'),
-  ('PIL.ImImagePlugin',
+  ('PIL.IcoImagePlugin',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\ImImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.IptcImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\IptcImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.BlpImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\BlpImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.XbmImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\XbmImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.WebPImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\WebPImagePlugin.py',
+   'gui\\.venv\\lib\\site-packages\\PIL\\IcoImagePlugin.py',
    'PYMODULE'),
   ('PIL.Jpeg2KImagePlugin',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
    'gui\\.venv\\lib\\site-packages\\PIL\\Jpeg2KImagePlugin.py',
    'PYMODULE'),
-  ('PIL.PsdImagePlugin',
+  ('PIL.BlpImagePlugin',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\PsdImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.PalmImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\PalmImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.PcxImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\PcxImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.EpsImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\EpsImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.FtexImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\FtexImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.WmfImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\WmfImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.GribStubImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\GribStubImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.PixarImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\PixarImagePlugin.py',
+   'gui\\.venv\\lib\\site-packages\\PIL\\BlpImagePlugin.py',
    'PYMODULE'),
   ('PIL.TgaImagePlugin',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
    'gui\\.venv\\lib\\site-packages\\PIL\\TgaImagePlugin.py',
    'PYMODULE'),
+  ('PIL.FpxImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\FpxImagePlugin.py',
+   'PYMODULE'),
   ('PIL.FitsStubImagePlugin',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
    'gui\\.venv\\lib\\site-packages\\PIL\\FitsStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImtImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\ImtImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GbrImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\GbrImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IptcImagePlugin',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\PIL\\IptcImagePlugin.py',
    'PYMODULE'),
   ('PIL.IcnsImagePlugin',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
@@ -1493,33 +1505,21 @@
    'c:\\users\\desto\\desktop\\projects\\word cloud '
    'gui\\.venv\\lib\\site-packages\\PIL\\features.py',
    'PYMODULE'),
-  ('PIL.IcoImagePlugin',
+  ('PIL.GribStubImagePlugin',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\IcoImagePlugin.py',
+   'gui\\.venv\\lib\\site-packages\\PIL\\GribStubImagePlugin.py',
    'PYMODULE'),
-  ('PIL.SunImagePlugin',
+  ('PIL.WebPImagePlugin',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\SunImagePlugin.py',
+   'gui\\.venv\\lib\\site-packages\\PIL\\WebPImagePlugin.py',
    'PYMODULE'),
-  ('PIL.FpxImagePlugin',
+  ('PIL.PixarImagePlugin',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\FpxImagePlugin.py',
+   'gui\\.venv\\lib\\site-packages\\PIL\\PixarImagePlugin.py',
    'PYMODULE'),
-  ('PIL.BufrStubImagePlugin',
+  ('PIL.PalmImagePlugin',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\BufrStubImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.MicImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\MicImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.McIdasImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\McIdasImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.MpoImagePlugin',
-   'c:\\users\\desto\\desktop\\projects\\word cloud '
-   'gui\\.venv\\lib\\site-packages\\PIL\\MpoImagePlugin.py',
+   'gui\\.venv\\lib\\site-packages\\PIL\\PalmImagePlugin.py',
    'PYMODULE'),
   ('PIL.TiffImagePlugin',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
@@ -2450,6 +2450,698 @@
   ('pandas.io.excel._openpyxl',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
    'gui\\.venv\\lib\\site-packages\\pandas\\io\\excel\\_openpyxl.py',
+   'PYMODULE'),
+  ('openpyxl.cell.cell',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\cell\\cell.py',
+   'PYMODULE'),
+  ('openpyxl.cell',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\cell\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.cell.read_only',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\cell\\read_only.py',
+   'PYMODULE'),
+  ('openpyxl.utils.datetime',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\utils\\datetime.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.hyperlink',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\hyperlink.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.excel',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\descriptors\\excel.py',
+   'PYMODULE'),
+  ('openpyxl.xml.functions',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\xml\\functions.py',
+   'PYMODULE'),
+  ('openpyxl.xml',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\xml\\__init__.py',
+   'PYMODULE'),
+  ('et_xmlfile.xmlfile',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\et_xmlfile\\xmlfile.py',
+   'PYMODULE'),
+  ('et_xmlfile',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\et_xmlfile\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.xml.constants',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\xml\\constants.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\descriptors\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.sequence',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\descriptors\\sequence.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.namespace',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\descriptors\\namespace.py',
+   'PYMODULE'),
+  ('openpyxl.utils.indexed_list',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\utils\\indexed_list.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.base',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\descriptors\\base.py',
+   'PYMODULE'),
+  ('openpyxl.styles.styleable',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\styles\\styleable.py',
+   'PYMODULE'),
+  ('openpyxl.styles.builtins',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\styles\\builtins.py',
+   'PYMODULE'),
+  ('openpyxl.styles.named_styles',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\styles\\named_styles.py',
+   'PYMODULE'),
+  ('openpyxl.styles.protection',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\styles\\protection.py',
+   'PYMODULE'),
+  ('openpyxl.styles.alignment',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\styles\\alignment.py',
+   'PYMODULE'),
+  ('openpyxl.styles.borders',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\styles\\borders.py',
+   'PYMODULE'),
+  ('openpyxl.styles.colors',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\styles\\colors.py',
+   'PYMODULE'),
+  ('openpyxl.styles.fonts',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\styles\\fonts.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.nested',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\descriptors\\nested.py',
+   'PYMODULE'),
+  ('openpyxl.styles.fills',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\styles\\fills.py',
+   'PYMODULE'),
+  ('openpyxl.styles.cell_style',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\styles\\cell_style.py',
+   'PYMODULE'),
+  ('openpyxl.styles.proxy',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\styles\\proxy.py',
+   'PYMODULE'),
+  ('openpyxl.styles.numbers',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\styles\\numbers.py',
+   'PYMODULE'),
+  ('openpyxl.utils',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\utils\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.utils.formulas',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\utils\\formulas.py',
+   'PYMODULE'),
+  ('openpyxl.utils.cell',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\utils\\cell.py',
+   'PYMODULE'),
+  ('openpyxl.utils.exceptions',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\utils\\exceptions.py',
+   'PYMODULE'),
+  ('openpyxl.compat',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\compat\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.compat.strings',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\compat\\strings.py',
+   'PYMODULE'),
+  ('openpyxl.compat.numbers',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\compat\\numbers.py',
+   'PYMODULE'),
+  ('openpyxl.styles',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\styles\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl._constants',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\_constants.py',
+   'PYMODULE'),
+  ('openpyxl.reader.excel',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\reader\\excel.py',
+   'PYMODULE'),
+  ('openpyxl.reader',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\reader\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.reader.drawings',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\reader\\drawings.py',
+   'PYMODULE'),
+  ('openpyxl.chart.reader',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\reader.py',
+   'PYMODULE'),
+  ('openpyxl.chart',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.chart.reference',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\reference.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.worksheet',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\worksheet.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.scenario',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\scenario.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.pagebreak',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\pagebreak.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.properties',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\properties.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.merge',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\merge.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.cell_range',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\cell_range.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.views',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\views.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.filters',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\filters.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.protection',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\protection.py',
+   'PYMODULE'),
+  ('openpyxl.utils.protection',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\utils\\protection.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.dimensions',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\dimensions.py',
+   'PYMODULE'),
+  ('openpyxl.utils.bound_dictionary',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\utils\\bound_dictionary.py',
+   'PYMODULE'),
+  ('openpyxl.utils.units',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\utils\\units.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.page',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\page.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.datavalidation',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\datavalidation.py',
+   'PYMODULE'),
+  ('openpyxl.formula.translate',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\formula\\translate.py',
+   'PYMODULE'),
+  ('openpyxl.formula',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\formula\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.formula.tokenizer',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\formula\\tokenizer.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.defined_name',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\workbook\\defined_name.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.child',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\workbook\\child.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.header_footer',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\header_footer.py',
+   'PYMODULE'),
+  ('openpyxl.utils.escape',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\utils\\escape.py',
+   'PYMODULE'),
+  ('openpyxl.formatting.formatting',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\formatting\\formatting.py',
+   'PYMODULE'),
+  ('openpyxl.formatting',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\formatting\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.formatting.rule',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\formatting\\rule.py',
+   'PYMODULE'),
+  ('openpyxl.styles.differential',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\styles\\differential.py',
+   'PYMODULE'),
+  ('openpyxl.chart.series_factory',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\series_factory.py',
+   'PYMODULE'),
+  ('openpyxl.chart.series',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\series.py',
+   'PYMODULE'),
+  ('openpyxl.chart.trendline',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\trendline.py',
+   'PYMODULE'),
+  ('openpyxl.chart.layout',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\layout.py',
+   'PYMODULE'),
+  ('openpyxl.chart.text',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\text.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.text',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\drawing\\text.py',
+   'PYMODULE'),
+  ('openpyxl.drawing',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\drawing\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.drawing',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\drawing\\drawing.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.geometry',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\drawing\\geometry.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.line',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\drawing\\line.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.fill',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\drawing\\fill.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.effect',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\drawing\\effect.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.colors',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\drawing\\colors.py',
+   'PYMODULE'),
+  ('openpyxl.chart.marker',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\marker.py',
+   'PYMODULE'),
+  ('openpyxl.chart.picture',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\picture.py',
+   'PYMODULE'),
+  ('openpyxl.chart.label',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\label.py',
+   'PYMODULE'),
+  ('openpyxl.chart.error_bar',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\error_bar.py',
+   'PYMODULE'),
+  ('openpyxl.chart.shapes',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\shapes.py',
+   'PYMODULE'),
+  ('openpyxl.chart.data_source',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\data_source.py',
+   'PYMODULE'),
+  ('openpyxl.chart.surface_chart',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\surface_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.axis',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\axis.py',
+   'PYMODULE'),
+  ('openpyxl.chart.title',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\title.py',
+   'PYMODULE'),
+  ('openpyxl.chart.descriptors',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\descriptors.py',
+   'PYMODULE'),
+  ('openpyxl.chart._3d',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\_3d.py',
+   'PYMODULE'),
+  ('openpyxl.chart._chart',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.legend',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\legend.py',
+   'PYMODULE'),
+  ('openpyxl.chart.stock_chart',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\stock_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.updown_bars',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\updown_bars.py',
+   'PYMODULE'),
+  ('openpyxl.chart.scatter_chart',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\scatter_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.radar_chart',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\radar_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.pie_chart',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\pie_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.line_chart',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\line_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.bubble_chart',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\bubble_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.bar_chart',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\bar_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.area_chart',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\area_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.chartspace',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\chartspace.py',
+   'PYMODULE'),
+  ('openpyxl.chart.print_settings',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\print_settings.py',
+   'PYMODULE'),
+  ('openpyxl.chart.pivot',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\pivot.py',
+   'PYMODULE'),
+  ('openpyxl.chart.plotarea',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chart\\plotarea.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.image',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\drawing\\image.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.spreadsheet_drawing',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\drawing\\spreadsheet_drawing.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.relation',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\drawing\\relation.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.picture',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\drawing\\picture.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.properties',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\drawing\\properties.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.graphic',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\drawing\\graphic.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.connector',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\drawing\\connector.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.xdr',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\drawing\\xdr.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.table',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\table.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.related',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\related.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chartsheet\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.chartsheet',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chartsheet\\chartsheet.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.publish',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chartsheet\\publish.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.custom',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chartsheet\\custom.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.views',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chartsheet\\views.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.protection',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chartsheet\\protection.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.properties',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chartsheet\\properties.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.relation',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\chartsheet\\relation.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.drawing',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\drawing.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet._reader',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\_reader.py',
+   'PYMODULE'),
+  ('openpyxl.cell.text',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\cell\\text.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet._read_only',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\_read_only.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.relationship',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\packaging\\relationship.py',
+   'PYMODULE'),
+  ('openpyxl.packaging',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.manifest',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\packaging\\manifest.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.core',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\packaging\\core.py',
+   'PYMODULE'),
+  ('openpyxl.styles.stylesheet',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\styles\\stylesheet.py',
+   'PYMODULE'),
+  ('openpyxl.styles.table',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\styles\\table.py',
+   'PYMODULE'),
+  ('openpyxl.reader.workbook',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\reader\\workbook.py',
+   'PYMODULE'),
+  ('openpyxl.pivot.record',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\pivot\\record.py',
+   'PYMODULE'),
+  ('openpyxl.pivot',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\pivot\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.pivot.fields',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\pivot\\fields.py',
+   'PYMODULE'),
+  ('openpyxl.pivot.cache',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\pivot\\cache.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.external_link.external',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\workbook\\external_link\\external.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.external_link',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\workbook\\external_link\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.workbook',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\packaging\\workbook.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.web',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\workbook\\web.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.views',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\workbook\\views.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.smart_tags',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\workbook\\smart_tags.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.protection',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\workbook\\protection.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.properties',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\workbook\\properties.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.function_group',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\workbook\\function_group.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.external_reference',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\workbook\\external_reference.py',
+   'PYMODULE'),
+  ('openpyxl.reader.strings',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\reader\\strings.py',
+   'PYMODULE'),
+  ('openpyxl.comments.comment_sheet',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\comments\\comment_sheet.py',
+   'PYMODULE'),
+  ('openpyxl.comments',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\comments\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.comments.shape_writer',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\comments\\shape_writer.py',
+   'PYMODULE'),
+  ('openpyxl.comments.comments',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\comments\\comments.py',
+   'PYMODULE'),
+  ('openpyxl.comments.author',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\comments\\author.py',
+   'PYMODULE'),
+  ('openpyxl.pivot.table',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\pivot\\table.py',
+   'PYMODULE'),
+  ('openpyxl.workbook',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\workbook\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.workbook',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\workbook\\workbook.py',
+   'PYMODULE'),
+  ('openpyxl.writer.excel',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\writer\\excel.py',
+   'PYMODULE'),
+  ('openpyxl.writer',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\writer\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.writer.theme',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\writer\\theme.py',
+   'PYMODULE'),
+  ('openpyxl.workbook._writer',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\workbook\\_writer.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet._writer',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\_writer.py',
+   'PYMODULE'),
+  ('openpyxl.cell._writer',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\cell\\_writer.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.extended',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\packaging\\extended.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.copier',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\copier.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet._write_only',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\worksheet\\_write_only.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.serialisable',
+   'c:\\users\\desto\\desktop\\projects\\word cloud '
+   'gui\\.venv\\lib\\site-packages\\openpyxl\\descriptors\\serialisable.py',
    'PYMODULE'),
   ('pandas.io.excel._odswriter',
    'c:\\users\\desto\\desktop\\projects\\word cloud '
